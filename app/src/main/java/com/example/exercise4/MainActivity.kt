@@ -59,5 +59,9 @@ class MainActivity : AppCompatActivity() {
 
             val datePickerDialog = DatePickerDialog(this,datePicker,calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH)).show()
         }
+        resetButton.setOnClickListener{
+            Age.text = "Age:"
+            Saving.text = "Min. Savings:"
+        }
     }
 }
